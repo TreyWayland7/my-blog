@@ -1,0 +1,58 @@
+
+body{
+    /* background-color: #618685; */
+    margin: 0;
+}
+.navBar{
+    background-color:hwb(194 32% 8%);
+    width: 100%;
+    top: 0;
+    height: 5%;
+    display: flex;
+}
+
+.navBarText{
+    margin-left: 5%;
+    color: black;
+    font-size: 80px;
+    padding: 10px;
+}
+
+
+.blogCard{
+    width: 50%;
+    background-color: pink;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    /* left: 50px; */
+    /* justify-content: ; */
+}
+.blogForm{
+    /* display: flex; */
+    width: 50%;
+    margin: auto;
+}
+
+/* .blogForm form input{
+    height: 50px;
+    width: 75%;
+} */
+
+.input{
+    width: 75%;
+}
+
+
+
+.blogHeader{
+    margin: auto;
+    width: 50%;
+    /* background-color: aqua; */
+    color: black;
+    font-size: 40px;
+}
+
+    
