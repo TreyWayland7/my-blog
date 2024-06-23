@@ -7,8 +7,28 @@ const contentEl = document.querySelector('#formContent');
 let blogPosts = [];
 //  localStorage.getItem('blogPosts');
 
-// let storedBlogPosts = localStorage.getItem('blogPosts');
 
+
+// if (storedBlogPosts != ""){
+    // blogPosts.push(storedBlogPosts);
+// }
+
+// console.log(localStorage);
+// console.log(typeof(storedBlogPosts));
+// blogPosts.push(storedBlogPosts);
+
+
+
+let storedBlogPosts = JSON.parse(localStorage.getItem('blogPosts'));
+// console.log(storedBlogPosts[0].author);
+
+if (storedBlogPosts != null){
+    for (let i=0; i<storedBlogPosts.length; i++){
+        // console.log("1");
+        console.log(storedBlogPosts[i]);
+        blogPosts.push(storedBlogPosts[i]);
+    }
+}
 
 function addNewForm(event){
     event.preventDefault();
@@ -25,16 +45,30 @@ function addNewForm(event){
     };
 
     // console.log(blogPost.author);
-    // console.log(blogPosts);
-    blogPosts.push(JSON.stringify(blogPost))
+    // blogPosts.push(JSON.stringify(blogPost))
+    blogPosts.push(blogPost);
+
+ 
+
     
-    localStorage.setItem('blogPosts', blogPosts);
+    // console.log(blogPosts);
 
 
+    // if (storedBlogPosts != null){
+    //     blogPosts.push(storedBlogPosts)
+    // }
+
+    localStorage.setItem('blogPosts',JSON.stringify(blogPosts));
+    // localStorage.setItem('blogPosts', JSON.stringify(blogPost + storedBlogPosts));
+    // let storedBlogPosts = localStorage.getItem('blogPosts');
+    // console.log(storedBlogPosts);
     // console.log(authorEl.value);
     // console.log(titleEl.value);
     // console.log(contentEl.value);
-    window.location.replace("blog.html");
+
+
+    // window.location.replace("blog.html");
+    location.href = "blog.html";
 }
 
 formEl.addEventListener('submit', addNewForm);

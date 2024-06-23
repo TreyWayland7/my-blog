@@ -1,20 +1,52 @@
 console.log("blog");
 const authorEl = document.querySelector('#blogPlaceHolder');
+const backButtonEl = document.querySelector('#backButton');
 
 
-let storedBlogPosts = localStorage.getItem('blogPosts');
+let storedBlogPosts = JSON.parse(localStorage.getItem('blogPosts'));
 
+
+// let storedBlogPosts =  localStorage.getItem('blogPosts');
 console.log(storedBlogPosts);
 
-const blogForgDisplayEl = document.createElement('div');
-blogForgDisplayEl.classList.add('blogFormDisplay');
-const disoplayTitleEl = document.createElement('div');
-disoplayTitleEl.classList.add('displayTitle');
-// disoplayTitleEl.textContent = storedBlogPosts.author;
-disoplayTitleEl.textContent = "Title";
-blogForgDisplayEl.appendChild(disoplayTitleEl);
-// li4.textContent = "asd";
-authorEl.appendChild(blogForgDisplayEl);
+for(let i=0; i<storedBlogPosts.length;i++){
+    // console.log(storedBlogPosts[i].title);
+    // console.log(storedBlogPosts[i].content);
+    // console.log(storedBlogPosts[i].author);
+    const blogForgDisplayEl = document.createElement('div');
+    blogForgDisplayEl.classList.add('blogFormDisplay');
+
+    // title
+    const disoplayTitleEl = document.createElement('div');
+    disoplayTitleEl.classList.add('displayTitle');
+    disoplayTitleEl.textContent = storedBlogPosts[i].title;
+    // disoplayTitleEl.textContent = "Title";
+    blogForgDisplayEl.appendChild(disoplayTitleEl);
+    // content
+    const displayContent = document.createElement('div');
+    displayContent.classList.add('displayContent');
+    displayContent.textContent = storedBlogPosts[i].content;
+    // displayContent.textContent = "assd";
+    blogForgDisplayEl.appendChild(displayContent);
+    // author
+    const displayAuthor = document.createElement('div');
+    displayAuthor.classList.add('displayAuthor');
+    displayAuthor.textContent = "Author: " + storedBlogPosts[i].author;
+    // displayAuthor.textContent = "Author";
+    blogForgDisplayEl.appendChild(displayAuthor);
+    // li4.textContent = "asd";
+    authorEl.appendChild(blogForgDisplayEl);
+    }
+
+
+
+
+
+backButtonEl.addEventListener('click',backButtonRedirect );
+
+function backButtonRedirect(event){
+    location.href = "index.html";
+}
 
 // console.log(JSON.parse(storedBlogPosts));
 
