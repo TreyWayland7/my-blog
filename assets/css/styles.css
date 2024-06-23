@@ -20,8 +20,8 @@ body{
 
 
 .blogCard{
-    width: 50%;
-    background-color: pink;
+    width: 70%;
+    background-color: rgba(25,200,25, 1);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -30,6 +30,36 @@ body{
     /* left: 50px; */
     /* justify-content: ; */
 }
+
+.blogCard:hover{
+    background-color: rgba(25,200,25, 0.9);
+    /* cursor: pointer; */
+}
+
+.displayTitle{
+    text-align: center;
+    font-size: 40px;
+}
+
+.displayContent{
+    background-color: white;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.blogFormDisplay{
+    width: 40%;
+    background-color: rgba(25,200,25, 1);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
 .blogForm{
     /* display: flex; */
     width: 50%;
