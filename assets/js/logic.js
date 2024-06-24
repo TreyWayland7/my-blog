@@ -24,9 +24,7 @@ function togleDarkMode(){
     bodyEl.classList.add("bodyDarkMode");
     navBarContainerEl.classList.add("navBarDarMode");
     navBarTextEl.classList.add("navBarTextDarkMode");
-
     footerContainerEl.classList.add("footerDarkMode");
-
     for(let i=0;i<blogFormIDEl.length; i++){
         blogFormIDEl[i].classList.add("blogFormDisplayDarkMode");
     }
@@ -43,3 +41,5 @@ function changeTheme(event){
         togleDarkMode();
     }
 }
+
+buttonThemeEl.addEventListener('click', changeTheme);

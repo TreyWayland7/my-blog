@@ -1,4 +1,3 @@
-console.log("blog");
 const authorEl = document.querySelector('#blogPlaceHolder');
 const backButtonEl = document.querySelector('#backButton');
 let storedBlogPosts = JSON.parse(localStorage.getItem('blogPosts'));
