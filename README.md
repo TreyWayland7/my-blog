@@ -17,7 +17,7 @@ The link the the website is as follows:
 
 Link to My git hub repository https://github.com/TreyWayland7/my-blog
 
-Link to the Website: https://treywayland7.github.io/TreyWaylandDevPortfolio/
+Link to the Website: https://treywayland7.github.io/my-blog/
 
 License
 Please refer to the LICENSE in the repo.
