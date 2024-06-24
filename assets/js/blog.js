@@ -14,6 +14,7 @@ for(let i=0; i<storedBlogPosts.length;i++){
     // console.log(storedBlogPosts[i].content);
     // console.log(storedBlogPosts[i].author);
     const blogForgDisplayEl = document.createElement('div');
+    blogForgDisplayEl.setAttribute("id", "blogFormID");
     blogForgDisplayEl.classList.add('blogFormDisplay');
 
     // title
@@ -24,6 +25,7 @@ for(let i=0; i<storedBlogPosts.length;i++){
     blogForgDisplayEl.appendChild(disoplayTitleEl);
     // content
     const displayContent = document.createElement('div');
+    displayContent.setAttribute("id", "displayContentID");
     displayContent.classList.add('displayContent');
     displayContent.textContent = storedBlogPosts[i].content;
     // displayContent.textContent = "assd";

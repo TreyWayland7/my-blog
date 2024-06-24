@@ -1,15 +1,26 @@
 
 body{
-    /* background-color: #618685; */
+    background-color: #FFf;
     margin: 0;
 }
+
+
+.bodyDarkMode{
+    background-color: #000;
+}
+
 .navBar{
-    background-color:hwb(194 32% 8%);
+    background-color:#F8AC71;
     width: 100%;
     top: 0;
     height: 5%;
     display: flex;
 }
+
+.navBarDarMode{
+    background-color:#34460F;
+}
+
 
 .navBarText{
     margin-left: 5%;
@@ -18,11 +29,16 @@ body{
     padding: 10px;
 }
 
+.navBarTextDarkMode{
+    color: white;
+}
+
 
 .blogCard{
     width: 70%;
-    background-color: rgba(25,200,25, 1);
+    background-color:#BDDB80;
     margin: 0 auto;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -32,7 +48,7 @@ body{
 }
 
 .blogCard:hover{
-    background-color: rgba(25,200,25, 0.9);
+    /* background-color: #BDDB80; */
     /* cursor: pointer; */
 }
 
@@ -45,12 +61,18 @@ body{
 }
 
 .footer{
-    background-color: aqua;
+    background-color:#F8AC71;
     position: fixed;
     width: 100%;
     height: 60px;
     bottom: 0;
     text-align: center;
+    
+}
+
+.footerDarkMode{
+    background-color:#34460F;
+    color:white;
 }
 
 .footerText{
@@ -79,21 +101,32 @@ body{
 
 .displayContent{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 80%;
+    height: 100px;
     margin: 0 auto;
+}
+
+.displayContentDarkMode{
+    background-color: black;
 }
 
 
 .blogFormDisplay{
     width: 40%;
-    background-color: rgba(25,200,25, 1);
+    background-color:#BDDB80;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     padding: 10px;
     margin-top: 10px;
+}
+
+
+.blogFormDisplayDarkMode{
+    background-color:#8953E5;
+    color:white;
 }
 
 .blogForm{
