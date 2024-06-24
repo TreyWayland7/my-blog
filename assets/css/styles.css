@@ -1,9 +1,7 @@
-
 body{
     background-color: #FFf;
     margin: 0;
 }
-
 
 .bodyDarkMode{
     background-color: #000;
@@ -21,7 +19,6 @@ body{
     background-color:#34460F;
 }
 
-
 .navBarText{
     margin-left: 5%;
     color: black;
@@ -33,7 +30,6 @@ body{
     color: white;
 }
 
-
 .blogCard{
     width: 70%;
     background-color:#BDDB80;
@@ -43,15 +39,7 @@ body{
     flex-direction: column;
     border-radius: 20px;
     padding: 10px;
-    /* left: 50px; */
-    /* justify-content: ; */
 }
-
-.blogCard:hover{
-    /* background-color: #BDDB80; */
-    /* cursor: pointer; */
-}
-
 
 .navbarButton{
     border-radius: 20px;
@@ -67,7 +55,6 @@ body{
     height: 60px;
     bottom: 0;
     text-align: center;
-    
 }
 
 .footerDarkMode{
@@ -84,10 +71,8 @@ body{
 }
 
 .navBarBackButton {
-    /* float: right; */
     margin-left: 50%;
     margin-right: 10px;
-    /* height:  */
 }
 
 .homePageDarkMode{
@@ -111,7 +96,6 @@ body{
     background-color: black;
 }
 
-
 .blogFormDisplay{
     width: 40%;
     background-color:#BDDB80;
@@ -123,35 +107,23 @@ body{
     margin-top: 10px;
 }
 
-
 .blogFormDisplayDarkMode{
     background-color:#8953E5;
     color:white;
 }
 
 .blogForm{
-    /* display: flex; */
     width: 50%;
     margin: auto;
 }
-
-/* .blogForm form input{
-    height: 50px;
-    width: 75%;
-} */
 
 .input{
     width: 75%;
 }
 
-
-
 .blogHeader{
     margin: auto;
     width: 50%;
-    /* background-color: aqua; */
     color: black;
     font-size: 40px;
 }
-
-    

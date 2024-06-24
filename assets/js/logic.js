@@ -2,11 +2,9 @@ const buttonThemeEl = document.querySelector('#buttonTheme');
 const navBarContainerEl = document.querySelector('#navBarContainer');
 const navBarTextEl = document.querySelector('#navbar');
 const footerContainerEl = document.querySelector('#footerContainer');
-// const footerContainerEl2 = document.querySelector('#footerContainer2');
 const blogFormIDEl = document.querySelectorAll('#blogFormID');
 const displayContentIDEl = document.querySelectorAll('#displayContentID');
 const bodyEl = document.querySelector('body');
-
 
 function togleLightMode(){
     bodyEl.classList.remove("bodyDarkMode");
@@ -20,9 +18,7 @@ function togleLightMode(){
     for(let i=0;i<blogFormIDEl.length; i++){
         displayContentIDEl[i].classList.remove("displayContentDarkMode");
     }
-    
 }
-
 
 function togleDarkMode(){
     bodyEl.classList.add("bodyDarkMode");
@@ -30,8 +26,6 @@ function togleDarkMode(){
     navBarTextEl.classList.add("navBarTextDarkMode");
 
     footerContainerEl.classList.add("footerDarkMode");
-    // footerContainerEl2.classList.add("footerDarkMode");
-    
 
     for(let i=0;i<blogFormIDEl.length; i++){
         blogFormIDEl[i].classList.add("blogFormDisplayDarkMode");
@@ -39,10 +33,7 @@ function togleDarkMode(){
     for(let i=0;i<displayContentIDEl.length; i++){
         displayContentIDEl[i].classList.add("displayContentDarkMode");
     }
-
-
 }
-
 
 function changeTheme(event){
     event.stopPropagation();
@@ -52,17 +43,3 @@ function changeTheme(event){
         togleDarkMode();
     }
 }
-
-function changeTheme2(event){
-    event.stopPropagation();
-    // bodyEl.classList.add("bodyLightMode");
-    // console.log("sd");
-
-
-}
-
-
-// buttonThemeEl.addEventListener('click', changeTheme);
-// bodyEl.addEventListener('click', changeTheme2);
-
-
